@@ -1,0 +1,22 @@
+// switch case
+#include<stdio.h>
+int main()
+{
+    char op;
+    float num1,num2,result=0.0f;
+    printf("enter numbers\n");
+    scanf("%f %f %c",&num1,&num2,&op);
+    switch(op)
+    {
+        case 'a':
+               result=num1+num2;
+               break;
+        case 's':
+               result=num1-num2;
+               break;
+        default:
+               printf("invalid operator");
+    }
+    printf("%.2f",result);
+    return 0;
+}
